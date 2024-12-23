@@ -79,14 +79,14 @@ const OrganizeTemplatePage: React.FC = () => {
     actions: [<DeleteScopeModal industryScopeMstId={item._id} scopeMstsRes={scopeMstsRes} />],
     avatar: 'https://gw.alipayobjects.com/zos/antfincdn/UCSiy1j6jx/xingzhuang.svg',
     content: (
-      <Space direction="vertical" style={{ marginTop: "-10px", marginBlockEnd: "-30px", minHeight: "300px" }}>
+      <Space direction="vertical" style={{ marginTop: "-10px", marginBlockEnd: "-30px", minHeight: "200px" }}>
         <Text style={{ fontSize: "12px" }}>想定関連部署： {item.department}</Text>
         <Text style={{ fontSize: "12px" }}>活動量データ： {item.active_data}</Text>
-        <img
+        {/* <img
           width={180}
           style={{ marginBlockStart: "20px" }}
           src="http://management.cc-dashboards.com/scopes/SCOPE3CAT01.svg"
-        />
+        /> */}
       </Space>
     ),
   }));
